@@ -6,9 +6,11 @@ cleanKanu <- function(full){
 full$Geschlecht <- factor(full$Geschlecht, 
 						  levels = c(1,2), 
 						  labels = c("männlich", "weiblich"))
+
 full$BK <- factor(full$BK,
 				  levels = c(0,1,2),
 				  labels = c("NK1", "Nk1-PK","OK"))
+
 full$ID <- factor(full$ID)
 
 # replace zeros with NA
@@ -36,6 +38,7 @@ kanu.long <- merge(kanu,testdate, all.x=TRUE)
 kanu.long <- kanu.long[complete.cases(kanu.long$value),]
 
 # add O-Zyklus
+
 # table(is.na(kanu.long$testjahr))
 # ids <- kanu.long[is.na(kanu.long$testjahr),]
 # unique(ids$ID) # 27 Probanden ohne Testdatum
@@ -81,8 +84,6 @@ kanu.long[Disziplin == "2"]$Disziplin <- "Kajak_w"
 kanu.long[Disziplin == "3"]$Disziplin <- "Canadier"
 
 kanu.long$Disziplin <- factor(kanu.long$Disziplin)
-
-
 
 return(kanu.long)
 }
