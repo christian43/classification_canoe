@@ -4,12 +4,12 @@ cleanKanu <- function(full){
 
 # numeric to factors
 full$Geschlecht <- factor(full$Geschlecht, 
-						  levels = c(1,2), 
-						  labels = c("männlich", "weiblich"))
+					  levels = c(1,2), 
+					  labels = c("männlich", "weiblich"))
 
 full$BK <- factor(full$BK,
-				  levels = c(0,1,2),
-				  labels = c("NK1", "Nk1-PK","OK"))
+			  levels = c(0,1,2),
+			  labels = c("NK1", "Nk1-PK","OK"))
 
 full$ID <- factor(full$ID)
 
@@ -47,24 +47,23 @@ kanu.long <- kanu.long[complete.cases(kanu.long$value),]
 kanu.long[, zyklus := cut(kanu.long$testjahr, breaks = 7 )]
 kanu.long[, zyklus := gsub('^.','[', zyklus)]
 kanu.long$zyklus <- factor(kanu.long$zyklus, 
-						   ordered = TRUE,
-						   levels = c("[1992,1996]",
-									  "[1996,2000]",
-									  "[2000,2004]",
-									  "[2004,2007]",
-									  "[2007,2011]",
-									  "[2011,2015]",
-									  "[2015,2019]",
-									  "<NA>"),
-						   labels = c("1992-1995",
-									  "1996-1999",
-									  "2000-2003",
-									  "2004-2007",
-									  "2008-2011",
-									  "2012-2015",
-									  "2016-2019",
-									  "<NA>")
-						   )
+					   ordered = TRUE,
+					   levels = c("[1992,1996]",
+								  "[1996,2000]",
+								  "[2000,2004]",
+								  "[2004,2007]",
+								  "[2007,2011]",
+								  "[2011,2015]",
+								  "[2015,2019]",
+								  "<NA>"),
+					   labels = c("1992-1995",
+								  "1996-1999",
+								  "2000-2003",
+								  "2004-2007",
+								  "2008-2011",
+								  "2012-2015",
+								  "2016-2019",
+								  "<NA>"))
 
 # remove Gesamt
 kanu.long <- kanu.long[ variable != "Gesamt"]
