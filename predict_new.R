@@ -75,7 +75,7 @@ legend(8,0.9, c("Landeskader","Bundeskader"),
 		col=c(colgrey, colred1), 
 		bty = "n",
 		lwd=1.8)	
-text(8.5,0.23, "Matwej Genrich", col = "darkgreen")
+text(8.5,0.23, "Athlete", col = "darkgreen")
 dev.off()
 
 
