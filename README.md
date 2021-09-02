@@ -1,7 +1,7 @@
 # classification_canoe
 
 This repo contains just the code that were used to analyze data from a canoe
-talent indentifaction program in Potsdam (Brandenburg, Germany). 
+talent indentification program in Potsdam (Brandenburg, Germany). 
 
  
 Prediction Canoe Performance (Team Squat)
