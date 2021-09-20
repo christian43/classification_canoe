@@ -17,13 +17,13 @@ a prospective study design, anthropometric, physical fitness and
 sport-specific performance data of 731 young canoe sprint athletes (12
 to 16 years) obtained between 1992 and 2019 were used for predictive
 modelling. Tests for anthropometry comprised body height, body mass,
-arm span, and leg length. In terms of physical fitness, tests for
+arm span, leg length and age. In terms of physical fitness, tests for
 cardiorespiratory endurance (800-m/1.500-m run), muscular endurance
 (bench press, bench pull), linear speed (30-m sprint), and muscle
 power (3 kg-medicine-ball-throw test) were included. Sport-specific
 tests included 250-m and 2.000-m on-water canoe sprint performance.
-Additionally, three categorial variables (discipline [canoe men, kayak
-women, kayak men], age, and performance level [elite, sub-elite]) were
+Additionally, two categorial variables (discipline [canoe men, kayak
+women, kayak men], and performance level [elite, sub-elite]) were
 used to classify the athletes. The performance level was defined as
 dependend variable and described the highest performance level the
 athletes achieved during their sporting career.
