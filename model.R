@@ -46,6 +46,10 @@ kanu$ID      <- NULL
 kanu         <- data.table(kanu)
 kanu         <- kanu[,!c("testjahr", "Geburtsjahr","session")]
 
+# remove duplicate ID
+kanu <- unique(kanu, by = "ID")
+kanu$ID <- NULL
+
 #### mlr3 Benchmark ----
 
 # create task
